@@ -15,6 +15,18 @@ body{
     margin: 25px auto;
     background-color: white;
     border-radius: 5px;
+    padding: 20px;
+}
+
+h2::before{
+    content: "\21E9";
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 10px;
 }
 
 /* Header */
@@ -30,7 +42,7 @@ h1{
     color: rgb(0, 22, 51);
 }
 
-/* Corpo */
+/* Main */
 .actions{
     background-size: 50px auto;
     padding: 15px;
@@ -52,4 +64,60 @@ button:last-child{
     color: grey;
     background-color: white;
     border: 1px solid grey;
+}
+
+/* Activities */
+.tsktype{
+    display: inline-block;
+    border-radius: 7.5px;
+    padding: 5px;
+    color: white;
+}
+
+
+.tasks{
+    margin-top: 20px;
+}
+
+
+.tskdone::before{
+    content: "\2713";
+    color: green;
+    margin: 0px 15px;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius:50px;
+}
+
+.tsknotdone::before{
+    content: "\2717";
+    color: red;
+    margin: 0px 17px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius:50px;
+}
+
+.tsk1{
+    background-color: #47ADF1;
+}
+
+.tsk2{
+    background-color: #9C72E4;
+}
+
+.tsk3{
+    background-color: #64C0A9;
+}
+
+.tsk4{
+    background-color: #F29E33;
+}
+
+.tsk5{
+    background-color: #D863A1;
+}
+
+.tsk6{
+    background-color: #B0C926;
 }
